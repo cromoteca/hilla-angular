@@ -6,7 +6,7 @@
     "my-app": {
       "projectType": "application",
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "frontend",
       "prefix": "app",
       "architect": {
         "build": {

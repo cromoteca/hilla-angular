@@ -1,10 +1,8 @@
 import 'zone.js/node';
 import { enableProdMode } from '@angular/core';
 import { renderApplication } from '@angular/platform-server';
-import { provideFileRouter } from '@analogjs/router';
-import { withEnabledBlockingInitialNavigation } from '@angular/router';
 
-import { AppComponent } from './app/app.component';
+import { AppComponent } from './app/app/app.component';
 
 if (import.meta.env.PROD) {
   enableProdMode();
@@ -12,10 +10,9 @@ if (import.meta.env.PROD) {
 
 export default async function render(url: string, document: string) {
   const html = await renderApplication(AppComponent, {
-    appId: 'analog-app',
+    appId: 'my-app',
     document,
     url,
-    providers: [provideFileRouter(withEnabledBlockingInitialNavigation())],
   });
 
   return html;

@@ -1,5 +1,4 @@
 import { Router } from '@vaadin/router';
-console.log('Router initialized');
 
 export const router = new Router(document.querySelector('#outlet'));
 

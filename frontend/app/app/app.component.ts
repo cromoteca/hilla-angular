@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HelloWorldEndpoint } from 'Frontend/generated/endpoints';
+import { HelloService } from '../hello.service';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +9,10 @@ import { HelloWorldEndpoint } from 'Frontend/generated/endpoints';
 export class AppComponent {
   name = '';
 
+  constructor(private helloService: HelloService) { }
+
   async sayHello() {
-    const message = await HelloWorldEndpoint.sayHello(this.name);
+    const message = await this.helloService.sayHello(this.name);
     alert(message);
   }
 }

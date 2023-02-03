@@ -1,0 +1,18 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": false,
+    "outDir": "./out-tsc/app",
+    "types": []
+  },
+  "files": [
+    "frontend/index.ts",
+    "frontend/main.server.ts"
+  ],
+  "include": [
+    "frontend/**/*.d.ts",
+    "frontend/app/routes/**/*.ts",
+    "frontend/generated/**/*.ts"
+  ]
+}

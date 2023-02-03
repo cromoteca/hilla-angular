@@ -3,6 +3,16 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@adobe/lit-mobx": "2.0.0",
+    "@analogjs/router": "latest",
+    "@angular/animations": "^15.0.0",
+    "@angular/common": "^15.0.0",
+    "@angular/compiler": "^15.0.0",
+    "@angular/core": "^15.0.0",
+    "@angular/forms": "^15.0.0",
+    "@angular/platform-browser": "^15.0.0",
+    "@angular/platform-browser-dynamic": "^15.0.0",
+    "@angular/platform-server": "^15.0.0",
+    "@angular/router": "^15.0.0",
     "@hilla/form": "2.0.0-alpha9",
     "@hilla/frontend": "2.0.0-alpha9",
     "@hilla/generator-typescript-cli": "2.0.0-alpha9",
@@ -13,6 +23,7 @@
     "@hilla/generator-typescript-plugin-model": "2.0.0-alpha9",
     "@hilla/generator-typescript-plugin-push": "2.0.0-alpha9",
     "@hilla/generator-typescript-utils": "2.0.0-alpha9",
+    "@nrwl/angular": "~15.4.0",
     "@polymer/polymer": "3.5.1",
     "@vaadin-component-factory/vcf-nav": "1.0.6",
     "@vaadin/accordion": "24.0.0-alpha11",
@@ -86,13 +97,22 @@
     "construct-style-sheets-polyfill": "3.1.0",
     "line-awesome": "1.3.0",
     "lit": "2.6.1",
-    "mobx": "^6.3.5"
+    "mobx": "^6.3.5",
+    "rxjs": "~7.5.6",
+    "tslib": "^2.4.0",
+    "zone.js": "~0.11.8"
   },
   "devDependencies": {
+    "@analogjs/platform": "latest",
+    "@angular-devkit/build-angular": "^15.0.0",
+    "@angular/cli": "~15.0.0",
+    "@angular/compiler-cli": "^15.0.0",
+    "@nrwl/vite": "~15.4.0",
     "@rollup/plugin-replace": "5.0.2",
     "@rollup/pluginutils": "5.0.2",
     "async": "3.2.2",
     "glob": "7.2.3",
+    "jsdom": "^20.0.0",
     "mkdirp": "1.0.4",
     "rollup-plugin-brotli": "3.1.0",
     "strip-css-comments": "5.0.0",
@@ -100,6 +120,7 @@
     "typescript": "4.9.3",
     "vite": "4.0.2",
     "vite-plugin-checker": "0.5.2",
+    "vitest": "^0.25.8",
     "workbox-build": "6.5.4",
     "workbox-core": "6.5.4",
     "workbox-precaching": "6.5.4"
@@ -189,7 +210,20 @@
     "@hilla/frontend": "$@hilla/frontend",
     "@hilla/form": "$@hilla/form",
     "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
-    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli"
+    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
+    "@angular/animations": "$@angular/animations",
+    "@angular/common": "$@angular/common",
+    "@angular/compiler": "$@angular/compiler",
+    "@angular/core": "$@angular/core",
+    "@angular/forms": "$@angular/forms",
+    "@angular/platform-browser": "$@angular/platform-browser",
+    "@angular/platform-browser-dynamic": "$@angular/platform-browser-dynamic",
+    "@angular/platform-server": "$@angular/platform-server",
+    "@angular/router": "$@angular/router",
+    "@nrwl/angular": "$@nrwl/angular",
+    "rxjs": "$rxjs",
+    "tslib": "$tslib",
+    "zone.js": "$zone.js"
   },
   "vaadin": {
     "dependencies": {
@@ -291,6 +325,6 @@
       "workbox-core": "6.5.4",
       "workbox-precaching": "6.5.4"
     },
-    "hash": "db15d65a4a23d694d261a13c8e896aa752fb6965084130d82d388b88f6d6f0fc"
+    "hash": "9f64347d63416dccdd39f5a466fe06bbfd61ba5a325aa3143b74cf9dc0619ad9"
   }
 }

@@ -3,6 +3,16 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@adobe/lit-mobx": "2.0.0",
+    "@hilla/form": "2.0.0-alpha9",
+    "@hilla/frontend": "2.0.0-alpha9",
+    "@hilla/generator-typescript-cli": "2.0.0-alpha9",
+    "@hilla/generator-typescript-core": "2.0.0-alpha9",
+    "@hilla/generator-typescript-plugin-backbone": "2.0.0-alpha9",
+    "@hilla/generator-typescript-plugin-barrel": "2.0.0-alpha9",
+    "@hilla/generator-typescript-plugin-client": "2.0.0-alpha9",
+    "@hilla/generator-typescript-plugin-model": "2.0.0-alpha9",
+    "@hilla/generator-typescript-plugin-push": "2.0.0-alpha9",
+    "@hilla/generator-typescript-utils": "2.0.0-alpha9",
     "@polymer/polymer": "3.5.1",
     "@vaadin-component-factory/vcf-nav": "1.0.6",
     "@vaadin/accordion": "24.0.0-alpha11",
@@ -74,11 +84,9 @@
     "@vaadin/vertical-layout": "24.0.0-alpha11",
     "@vaadin/virtual-list": "24.0.0-alpha11",
     "construct-style-sheets-polyfill": "3.1.0",
-    "date-fns": "2.29.3",
     "line-awesome": "1.3.0",
     "lit": "2.6.1",
-    "mobx": "^6.3.5",
-    "proj4": "2.8.1"
+    "mobx": "^6.3.5"
   },
   "devDependencies": {
     "@rollup/plugin-replace": "5.0.2",
@@ -167,12 +175,34 @@
     "construct-style-sheets-polyfill": "$construct-style-sheets-polyfill",
     "lit": "$lit",
     "@polymer/polymer": "$@polymer/polymer",
-    "proj4": "$proj4",
-    "date-fns": "$date-fns",
-    "@vaadin/overlay": "$@vaadin/overlay"
+    "@vaadin/overlay": "$@vaadin/overlay",
+    "@adobe/lit-mobx": "$@adobe/lit-mobx",
+    "@vaadin-component-factory/vcf-nav": "$@vaadin-component-factory/vcf-nav",
+    "line-awesome": "$line-awesome",
+    "mobx": "$mobx",
+    "@hilla/generator-typescript-plugin-model": "$@hilla/generator-typescript-plugin-model",
+    "@hilla/generator-typescript-plugin-barrel": "$@hilla/generator-typescript-plugin-barrel",
+    "@hilla/generator-typescript-plugin-push": "$@hilla/generator-typescript-plugin-push",
+    "@hilla/generator-typescript-core": "$@hilla/generator-typescript-core",
+    "@hilla/generator-typescript-plugin-client": "$@hilla/generator-typescript-plugin-client",
+    "@hilla/generator-typescript-utils": "$@hilla/generator-typescript-utils",
+    "@hilla/frontend": "$@hilla/frontend",
+    "@hilla/form": "$@hilla/form",
+    "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
+    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli"
   },
   "vaadin": {
     "dependencies": {
+      "@hilla/form": "2.0.0-alpha9",
+      "@hilla/frontend": "2.0.0-alpha9",
+      "@hilla/generator-typescript-cli": "2.0.0-alpha9",
+      "@hilla/generator-typescript-core": "2.0.0-alpha9",
+      "@hilla/generator-typescript-plugin-backbone": "2.0.0-alpha9",
+      "@hilla/generator-typescript-plugin-barrel": "2.0.0-alpha9",
+      "@hilla/generator-typescript-plugin-client": "2.0.0-alpha9",
+      "@hilla/generator-typescript-plugin-model": "2.0.0-alpha9",
+      "@hilla/generator-typescript-plugin-push": "2.0.0-alpha9",
+      "@hilla/generator-typescript-utils": "2.0.0-alpha9",
       "@polymer/polymer": "3.5.1",
       "@vaadin/accordion": "24.0.0-alpha11",
       "@vaadin/app-layout": "24.0.0-alpha11",
@@ -243,9 +273,7 @@
       "@vaadin/vertical-layout": "24.0.0-alpha11",
       "@vaadin/virtual-list": "24.0.0-alpha11",
       "construct-style-sheets-polyfill": "3.1.0",
-      "date-fns": "2.29.3",
-      "lit": "2.6.1",
-      "proj4": "2.8.1"
+      "lit": "2.6.1"
     },
     "devDependencies": {
       "@rollup/plugin-replace": "5.0.2",
@@ -263,6 +291,6 @@
       "workbox-core": "6.5.4",
       "workbox-precaching": "6.5.4"
     },
-    "hash": "b329df3c88523d85289790be8ebcb7f1be140345934652a5bdcdd92aeabb4544"
+    "hash": "db15d65a4a23d694d261a13c8e896aa752fb6965084130d82d388b88f6d6f0fc"
   }
 }

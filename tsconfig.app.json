@@ -8,7 +8,6 @@
   },
   "files": [
     "frontend/index.ts",
-    "frontend/main.server.ts"
   ],
   "include": [
     "frontend/**/*.d.ts",

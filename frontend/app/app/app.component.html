@@ -1,2 +1,4 @@
-<vaadin-text-field label="Your name" [value]="name" (value-changed)="update($event)"></vaadin-text-field>
-<vaadin-button (click)="sayHello()">Say hello</vaadin-button>
+<div class='flex p-m gap-m items-end'>
+    <vaadin-text-field label="Your name" [value]="name" (value-changed)="update($event)"></vaadin-text-field>
+    <vaadin-button (click)="sayHello()">Say hello</vaadin-button>
+</div>

@@ -1,2 +1,2 @@
-<input placeholder="Your name" [(ngModel)]="name">
-<button (click)="sayHello()">Say hello!</button>
+<vaadin-text-field label="Your name" [value]="name" (value-changed)="update($event)"></vaadin-text-field>
+<vaadin-button (click)="sayHello()">Say hello</vaadin-button>

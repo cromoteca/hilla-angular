@@ -3,7 +3,6 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@adobe/lit-mobx": "2.0.0",
-    "@analogjs/router": "latest",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",
@@ -325,6 +324,6 @@
       "workbox-core": "6.5.4",
       "workbox-precaching": "6.5.4"
     },
-    "hash": "9f64347d63416dccdd39f5a466fe06bbfd61ba5a325aa3143b74cf9dc0619ad9"
+    "hash": "8781be9f61b27847df3240bc6dc9b752a296139e450355ea7a465b3a574a667e"
   }
 }

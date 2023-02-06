@@ -5,11 +5,11 @@ import '@vaadin/text-field';
 import { Notification } from '@vaadin/notification';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'hello-world',
+  templateUrl: './hello-world.component.html',
+  styleUrls: ['./hello-world.component.css']
 })
-export class AppComponent {
+export class HelloWorldComponent {
   name = '';
 
   constructor(private helloService: HelloService) { }

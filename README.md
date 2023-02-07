@@ -12,5 +12,6 @@ As usual, clone the repository and run `mvn` or the Maven wrapper included. It w
 
 ## Known bugs
 
-- Component CSS don't work.
-- Not really a bug, but for two-way data binding to work with Vaadin Web Components, [ControlValueAccessor](https://angular.io/api/forms/ControlValueAccessor)s will be needed to pair property getters and setters between them
+- Component CSS don't work: CSS files are parsed as JS/TS files during execution, generating errors;
+- unit tests are also parsed when running the application, generating errors due to missing dependencies;
+- not really a bug, but for two-way data binding to work with Vaadin Web Components, [ControlValueAccessor](https://angular.io/api/forms/ControlValueAccessor)s will be needed to pair property getters and setters between them

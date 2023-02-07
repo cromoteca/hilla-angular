@@ -8,7 +8,7 @@ import '@vaadin/scroller';
 import '@vaadin/tabs';
 import '@vaadin/tabs/vaadin-tab';
 import '@vaadin/vaadin-lumo-styles/vaadin-iconset';
-import { routes } from '../app-routing.module';
+import { appTitle, routes, TemplatePageTitleStrategy } from '../app-routing.module';
 
 @Component({
   selector: 'main-layout',
@@ -16,5 +16,20 @@ import { routes } from '../app-routing.module';
   styleUrls: ['./main-layout.component.css']
 })
 export class MainLayoutComponent {
-  menuItems = routes;
+  constructor(
+    private titleStrategy: TemplatePageTitleStrategy,
+  ) { }
+
+  pageTitle = '';
+
+  ngOnInit() {
+    this.titleStrategy.subscribe({
+      next: (title) => {
+        this.pageTitle = title;
+      },
+    });
+  }
+
+  menuItems = routes.filter(route => route.title && route.icon);
+  appTitle = appTitle;
 }

@@ -1,21 +1,22 @@
 <vaadin-app-layout primary-section="drawer">
     <header slot="drawer">
-        <h1 class="text-l m-0">TODO: TITLE</h1>
+        <h1 class="text-l m-0">{{appTitle}}</h1>
     </header>
     <vaadin-scroller slot="drawer" scroll-direction="vertical">
-        <!-- vcf-nav is not yet an official component -->
-        <!-- For documentation, visit https://github.com/vaadin/vcf-nav#readme -->
-        <ul>
-            <li *ngFor="let item of menuItems" [path]="item.path">
-                <span class="nav-item-icon" slot="prefix" aria-hidden="true"></span>
-                <a routerLink="{{item.path}}">{{item.path}}</a>
-            </li>
-        </ul>
-
-        <footer slot="drawer"></footer>
-
-        <vaadin-drawer-toggle slot="navbar" aria-label="Menu toggle"></vaadin-drawer-toggle>
-        <h2 slot="navbar" class="text-l m-0">TITLE</h2>
+        <nav>
+            <ul>
+                <li *ngFor="let item of menuItems" [path]="item.path">
+                    <span class="{{item.icon}} nav-item-icon" slot="prefix" aria-hidden="true"></span>
+                    <a routerLink="{{item.path}}">{{item.title}}</a>
+                </li>
+            </ul>
+        </nav>
     </vaadin-scroller>
+
+    <footer slot="drawer"></footer>
+
+    <vaadin-drawer-toggle slot="navbar" aria-label="Menu toggle"></vaadin-drawer-toggle>
+    <h2 slot="navbar" class="text-l m-0">{{pageTitle}}</h2>
+
     <router-outlet></router-outlet>
 </vaadin-app-layout>
